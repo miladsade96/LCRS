@@ -50,3 +50,22 @@ def number_of_good_pairs(nums: List[int]) -> int:
             if nums[i] == nums[j]:
                 count += 1
     return count
+
+
+def median_of_two_sorted_arrays(nums_1: List[int], nums_2: List[int]) -> float:
+    """
+    Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+    The overall run time complexity should be O(log (m+n)).
+    Level of difficulty: Hard
+    :param nums_1: List of integers
+    :param nums_2: List of integers
+    :return: The median of two sorted arrays
+    """
+    merged = sorted(nums_1 + nums_2)
+    idx = (len(merged) - 1) // 2
+    if len(merged) % 2 != 0:
+        median = merged[idx]
+        return median
+    else:
+        median = (merged[idx] + merged[idx + 1]) / 2
+        return median
