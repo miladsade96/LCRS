@@ -1,3 +1,6 @@
+from typing import List
+
+
 def is_isomorphic(s: str, t: str) -> bool:
     """
     Given two strings s and t, determine if they are isomorphic.
@@ -31,3 +34,19 @@ def number_of_one_bits(n: int) -> int:
     :return: Number of 1 bits
     """
     return bin(n).count("1")
+
+
+def number_of_good_pairs(nums: List[int]) -> int:
+    """
+    Given an array of integers nums, return the number of good pairs.
+    A pair (i, j) is called good if nums[i] == nums[j] and i < j.
+    Level of difficulty: Easy
+    :param nums: List of integers
+    :return: Number of good pairs
+    """
+    count = 0
+    for i in range(0, len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[i] == nums[j]:
+                count += 1
+    return count
