@@ -19,3 +19,15 @@ def is_isomorphic(s: str, t: str) -> bool:
         elif mapping_s_t.get(c1) != c2 or mapping_t_s.get(c2) != c1:
             return False
     return True
+
+
+def number_of_one_bits(n: int) -> int:
+    """
+    Write a function that takes an unsigned integer and returns the number of '1' bits,
+    It has (also known as the Hamming weight).
+    https://en.wikipedia.org/wiki/Hamming_weight
+    Lever of difficulty: Easy
+    :param n: An unsigned integer
+    :return: Number of 1 bits
+    """
+    return bin(n).count("1")
