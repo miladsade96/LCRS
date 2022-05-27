@@ -94,3 +94,22 @@ def binary_subarrays_with_sum(nums: List[int], goal: int) -> int:
         if sum_left == goal:
             result += right - left + 1
     return result
+
+
+def two_sum(nums: List[int], target: int) -> List[int]:
+    """
+    Given an array of integers nums and an integer target, return indices
+    of the two numbers such that they add up to target.
+    You may assume that each input would have exactly one solution, and you may not use the same element twice.
+    You can return the answer in any order.
+    Level of difficulty: Easy
+    :param nums: List of integer numbers
+    :param target: An integer number
+    :return: List, Indices of two numbers
+    """
+    num_to_index = {}
+    for i, num in enumerate(nums):
+        if target - num in num_to_index:
+            tmp = num_to_index[target - num], i
+            return list(tmp)
+        num_to_index[num] = i
