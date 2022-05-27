@@ -69,3 +69,28 @@ def median_of_two_sorted_arrays(nums_1: List[int], nums_2: List[int]) -> float:
     else:
         median = (merged[idx] + merged[idx + 1]) / 2
         return median
+
+
+def binary_subarrays_with_sum(nums: List[int], goal: int) -> int:
+    """
+    Given a binary array nums and an integer goal, return the number of non-empty subarrays with a sum goal.
+    A subarray is a contiguous part of the array.
+    Level of difficulty: Medium
+    :param nums: List of binary numbers
+    :param goal: An integer number
+    :return: The number of non-empty subarrays with a sum goal
+    """
+    result = 0
+    left, right, sum_left, sum_right = 0, 0, 0, 0
+    for i, a in enumerate(nums):
+        sum_left += a
+        while left < i and sum_left > goal:
+            sum_left -= nums[left]
+            left += 1
+        sum_right += a
+        while right < i and (sum_right > goal or (sum_right == goal and not nums[right])):
+            sum_right -= nums[right]
+            right += 1
+        if sum_left == goal:
+            result += right - left + 1
+    return result
