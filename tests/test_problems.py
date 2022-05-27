@@ -34,3 +34,11 @@ def test_median_of_two_sorted_arrays(func_input_1, func_input_2, expected):
                          [([1, 0, 1, 0, 1], 2, 4), ([0, 0, 0, 0, 0], 0, 15)])
 def test_binary_subarrays_with_sum(input_1, input_2, expected):
     assert binary_subarrays_with_sum(input_1, input_2) == expected
+
+
+@pytest.mark.parametrize("input_1, input_2, expected",
+                         [([2, 7, 11, 15], 9, [0, 1]),
+                          ([3, 2, 4], 6, [1, 2]),
+                          ([3, 3], 6, [0, 1])])
+def test_two_sum(input_1, input_2, expected):
+    assert two_sum(nums=input_1, target=input_2) == expected
