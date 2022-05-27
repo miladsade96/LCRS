@@ -42,3 +42,9 @@ def test_binary_subarrays_with_sum(input_1, input_2, expected):
                           ([3, 3], 6, [0, 1])])
 def test_two_sum(input_1, input_2, expected):
     assert two_sum(nums=input_1, target=input_2) == expected
+
+
+@pytest.mark.parametrize("func_input, expected",
+                         [([1, 2, 0], 3), ([3, 4, -1, 1], 2), ([7, 8, 9, 11, 12], 1)])
+def test_first_missing_positive(func_input, expected):
+    assert first_missing_positive(nums=func_input) == expected
