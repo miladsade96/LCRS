@@ -113,3 +113,21 @@ def two_sum(nums: List[int], target: int) -> List[int]:
             tmp = num_to_index[target - num], i
             return list(tmp)
         num_to_index[num] = i
+
+
+def first_missing_positive(nums: List[int]) -> int:
+    """
+    Given an unsorted integer array nums, return the smallest missing positive integer.
+    You must implement an algorithm that runs in O(n) time and uses constant extra space.
+    Level of difficulty: Hard
+    :param nums: Unsorted list of integers
+    :return: Smallest missing integer
+    """
+    n = len(nums)
+    for i in range(n):
+        while 0 < nums[i] < n and nums[nums[i] - 1] != nums[i]:
+            nums[nums[i] - 1], nums[i] = nums[i], nums[nums[i] - 1]
+    for j, num in enumerate(nums):
+        if num != j + 1:
+            return j + 1
+    return n + 1
