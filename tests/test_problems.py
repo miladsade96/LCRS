@@ -28,3 +28,9 @@ def test_number_of_good_pairs(func_input, expected):
                           ([90, 17, 200], [150, 150, 900], 150.0)])
 def test_median_of_two_sorted_arrays(func_input_1, func_input_2, expected):
     assert median_of_two_sorted_arrays(func_input_1, func_input_2) == expected
+
+
+@pytest.mark.parametrize("input_1, input_2, expected",
+                         [([1, 0, 1, 0, 1], 2, 4), ([0, 0, 0, 0, 0], 0, 15)])
+def test_binary_subarrays_with_sum(input_1, input_2, expected):
+    assert binary_subarrays_with_sum(input_1, input_2) == expected
