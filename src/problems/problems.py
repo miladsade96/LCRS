@@ -1,4 +1,5 @@
 from typing import List
+from collections import Counter
 
 
 def is_isomorphic(s: str, t: str) -> bool:
@@ -131,3 +132,17 @@ def first_missing_positive(nums: List[int]) -> int:
         if num != j + 1:
             return j + 1
     return n + 1
+
+
+def hamming_distance(x: int, y: int) -> int:
+    """
+    The Hamming distance between two integers is the number of positions at which the corresponding
+    bits are different. Given two integers x and y, return the Hamming distance between them.
+    Level of difficulty: Easy
+    :param x: First given integer
+    :param y: Second given integer
+    :return: Hamming distance
+    """
+    diff = x ^ y
+    c = Counter(str(bin(diff)))
+    return c['1']
