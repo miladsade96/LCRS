@@ -48,3 +48,9 @@ def test_two_sum(input_1, input_2, expected):
                          [([1, 2, 0], 3), ([3, 4, -1, 1], 2), ([7, 8, 9, 11, 12], 1)])
 def test_first_missing_positive(func_input, expected):
     assert first_missing_positive(nums=func_input) == expected
+
+
+@pytest.mark.parametrize("input_1, input_2, expected",
+                         [(1, 4, 2), (1, 3, 1)])
+def test_hamming_distance(input_1, input_2, expected):
+    assert hamming_distance(x=input_1, y=input_2) == expected
