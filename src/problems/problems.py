@@ -188,3 +188,26 @@ def sliding_window_median(nums: List[int], k: int) -> List[float]:
         left += 1
         right += 1
     return medians
+
+
+def sorting_the_sentence(s: str) -> str:
+    """
+    A sentence is a list of words that are separated by a single space with no leading or trailing spaces.
+    Each word consists of lowercase and uppercase English letters.
+    A sentence can be shuffled by appending the 1-indexed word position to each word then rearranging the
+    words in the sentence. For example, the sentence "This is a sentence" can be shuffled as
+    "sentence4 a3 is2 This1" or "is2 sentence4 This1 a3". Given a shuffled sentence s containing no more
+    than 9 words, reconstruct and return the original sentence.
+    Level of difficulty: Easy
+    :param s:
+    :return:
+    """
+    word_list = s.split(" ")
+    directory = {}
+    for c in word_list:
+        directory[c[-1]] = c[:-1]
+    res = ""
+    for i in range(len(word_list)):
+        res += directory[str(i + 1)]
+        res += " "
+    return res[:-1]
