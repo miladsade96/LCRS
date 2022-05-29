@@ -157,3 +157,34 @@ def length_of_last_word(s: str) -> int:
     :return: Length of last word
     """
     return len(s.strip().split(" ")[-1])
+
+
+def sliding_window_median(nums: List[int], k: int) -> List[float]:
+    """
+    The median is the middle value in an ordered integer list. If the size of the list is even,
+    there is no middle value. So the median is the mean of the two middle values.
+    You are given an integer array nums and an integer k. There is a sliding window of size k which is
+    moving from the very left of the array to the very right. You can only see the k numbers in the window.
+    Each time the sliding window moves right by one position.
+    Return the median array for each window in the original array.
+    Answers within 10-5 of the actual value will be accepted.
+    Level of difficulty: Hard
+    :param nums: List of integer numbers
+    :param k: Size of the sliding windows
+    :return: The median array for each window in the original array
+    """
+    left = 0
+    right = k - 1
+    epochs = len(nums) - right
+    medians = list()
+    for i in range(epochs):
+        new = sorted(nums[left:right + 1])
+        idx = (len(new) - 1) // 2
+        if len(new) % 2 != 0:
+            medians.append(float(new[idx]))
+        else:
+            median = (new[idx] + new[idx + 1]) / 2
+            medians.append(median)
+        left += 1
+        right += 1
+    return medians
