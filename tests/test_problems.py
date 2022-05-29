@@ -70,3 +70,10 @@ def test_length_of_last_word(func_input, expected):
                            [2.00000, 3.00000, 3.00000, 3.00000, 2.00000, 3.00000, 2.00000])])
 def test_sliding_window_median(input_1, input_2, expected):
     assert sliding_window_median(nums=input_1, k=input_2) == expected
+
+
+@pytest.mark.parametrize("func_input, expected",
+                         [("is2 sentence4 This1 a3", "This is a sentence"),
+                          ("Myself2 Me1 I4 and3", "Me Myself and I")])
+def test_sorting_the_sentence(func_input, expected):
+    assert sorting_the_sentence(s=func_input) == expected
