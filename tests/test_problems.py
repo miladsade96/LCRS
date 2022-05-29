@@ -54,3 +54,10 @@ def test_first_missing_positive(func_input, expected):
                          [(1, 4, 2), (1, 3, 1)])
 def test_hamming_distance(input_1, input_2, expected):
     assert hamming_distance(x=input_1, y=input_2) == expected
+
+
+@pytest.mark.parametrize("func_input, expected",
+                         [("Hello World", 5), ("   fly me   to   the moon  ", 4),
+                          ("luffy is still joyboy", 6)])
+def test_length_of_last_word(func_input, expected):
+    assert length_of_last_word(s=func_input) == expected
