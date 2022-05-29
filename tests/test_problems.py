@@ -61,3 +61,12 @@ def test_hamming_distance(input_1, input_2, expected):
                           ("luffy is still joyboy", 6)])
 def test_length_of_last_word(func_input, expected):
     assert length_of_last_word(s=func_input) == expected
+
+
+@pytest.mark.parametrize("input_1, input_2, expected",
+                         [([1, 3, -1, -3, 5, 3, 6, 7], 3,
+                           [1.00000, -1.00000, -1.00000, 3.00000, 5.00000, 6.00000]),
+                          ([1, 2, 3, 4, 2, 3, 1, 4, 2], 3,
+                           [2.00000, 3.00000, 3.00000, 3.00000, 2.00000, 3.00000, 2.00000])])
+def test_sliding_window_median(input_1, input_2, expected):
+    assert sliding_window_median(nums=input_1, k=input_2) == expected
