@@ -146,3 +146,14 @@ def hamming_distance(x: int, y: int) -> int:
     diff = x ^ y
     c = Counter(str(bin(diff)))
     return c['1']
+
+
+def length_of_last_word(s: str) -> int:
+    """
+    Given a string s consisting of words and spaces, return the length of the last word in the string.
+    A word is a maximal substring consisting of non-space characters only.
+    Level of difficulty: Easy
+    :param s: Given string
+    :return: Length of last word
+    """
+    return len(s.strip().split(" ")[-1])
