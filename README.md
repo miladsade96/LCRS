@@ -1,2 +1,2 @@
 # LCRS
-LeetCode Related Stuff
+## LeetCode Related Stuff
