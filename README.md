@@ -1,5 +1,4 @@
-# LCRS
-## LeetCode Related Stuff
+![logo](logo.png)
 
 
 [![CodeFactor](https://www.codefactor.io/repository/github/everlookneversee/lcrs/badge)](https://www.codefactor.io/repository/github/everlookneversee/lcrs)
