@@ -38,3 +38,20 @@ python -m pip install -r requirements.txt
 ```commandline
 pytest -v tests/
 ```
+
+
+## Solved problems
+* Easy:
+    * is_isomorphic
+    * number_of_one_bits
+    * number_of_good_pairs
+    * two_Sum
+    * hamming_distance
+    * length_of_last_word
+    * sorting_the_sentence
+* Medium:
+    * binary_subarrays_with_sum
+* Hard:
+    * median_of_two_sorted_arrays
+    * first_missing_positive
+    * sliding_window_median
