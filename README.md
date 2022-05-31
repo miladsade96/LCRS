@@ -14,3 +14,8 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/EverLookNeverSee/lcrs)
 ![GitHub contributors](https://img.shields.io/github/contributors/EverLookNeverSee/lcrs)
 ![GitHub last commit](https://img.shields.io/github/last-commit/EverLookNeverSee/lcrs)
+
+
+## Authors
+* Milad Sadeghi DM - [EverLookNeverSee@GitHub](https://github.com/EverLookNeverSee)
+* See all contributors list [here](https://github.com/EverLookNeverSee/LCRS/graphs/contributors).
