@@ -19,3 +19,22 @@
 ## Authors
 * Milad Sadeghi DM - [EverLookNeverSee@GitHub](https://github.com/EverLookNeverSee)
 * See all contributors list [here](https://github.com/EverLookNeverSee/LCRS/graphs/contributors).
+
+
+## Installing the dependencies and running the tests
+1. Creating a python virtual environment:
+```commandline
+python -m  venv virtual_environment_name
+```
+2. Activating venv:
+```commandline
+source virtual_environment_name/bin/activate
+```
+3. Installing project dependencies:
+```commandline
+python -m pip install -r requirements.txt
+```
+4. Running tests:
+```commandline
+pytest -v tests/
+```
