@@ -49,6 +49,7 @@ pytest -v tests/
     * hamming_distance
     * length_of_last_word
     * sorting_the_sentence
+    * is_palindrome
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
