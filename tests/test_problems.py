@@ -84,3 +84,10 @@ def test_sorting_the_sentence(func_input, expected):
                           (11011, True), (9098908, False), (1, True), (85, False)])
 def test_is_palindrome_v1(func_input, expected):
     assert is_palindrome_v1(x=func_input) == expected
+
+
+@pytest.mark.parametrize("func_input, expected",
+                         [(121, True), (-121, False), (123, False), (1221, True),
+                          (11011, True), (9098908, False), (1, True), (85, False)])
+def test_is_palindrome_v2(func_input, expected):
+    assert is_palindrome_v2(x=func_input) == expected
