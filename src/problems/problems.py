@@ -211,3 +211,19 @@ def sorting_the_sentence(s: str) -> str:
         res += directory[str(i + 1)]
         res += " "
     return res[:-1]
+
+
+def is_palindrome_v1(x: int) -> bool:
+    """
+    Given an integer x, return true if x is palindrome integer.
+    An integer is a palindrome when it reads the same backward as forward.
+    For example, 121 is a palindrome while 123 is not.
+    v1 runtime: 81 ms
+    Level of difficulty: Easy
+    :param x: An integer number
+    :return: bool, Whether given integer is palindrome or not
+    """
+    if str(x) == str(x)[::-1]:
+        return True
+    else:
+        return False
