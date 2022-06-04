@@ -227,3 +227,18 @@ def is_palindrome_v1(x: int) -> bool:
         return True
     else:
         return False
+
+
+def is_palindrome_v2(x: int) -> bool:
+    """
+    Given an integer x, return true if x is palindrome integer.
+    An integer is a palindrome when it reads the same backward as forward.
+    For example, 121 is a palindrome while 123 is not.
+    v2 runtime: 28 ms
+    Level of difficulty: Easy
+    :param x: An integer number
+    :return: bool, Whether given integer is palindrome or not
+    """
+    if x != 0:
+        return str(x) == str(x)[::-1]
+    return True
