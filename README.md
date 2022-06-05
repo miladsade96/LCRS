@@ -50,6 +50,7 @@ pytest -v tests/
     * length_of_last_word
     * sorting_the_sentence
     * is_palindrome
+    * height_checker
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
