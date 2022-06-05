@@ -91,3 +91,10 @@ def test_is_palindrome_v1(func_input, expected):
                           (11011, True), (9098908, False), (1, True), (85, False)])
 def test_is_palindrome_v2(func_input, expected):
     assert is_palindrome_v2(x=func_input) == expected
+
+
+@pytest.mark.parametrize("func_input, expected",
+                         [([1, 1, 4, 2, 1, 3], 3),
+                          ([5, 1, 2, 3, 4], 5), ([1, 2, 3, 4, 5], 0)])
+def test_height_checker_v1(func_input, expected):
+    assert height_checker_v1(heights=func_input) == expected
