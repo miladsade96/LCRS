@@ -286,3 +286,19 @@ def height_checker_v2(heights: List[int]) -> int:
         if sorted_h[i] != heights[i]:
             count += 1
     return count
+
+
+def binary_search(nums: List[int], target: int) -> int:
+    """
+    Given an array of integers nums which is sorted in ascending order, and an integer target,
+    write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+    You must write an algorithm with O(log n) runtime complexity.
+    Level of difficulty: Easy
+    :param nums: List of integers
+    :param target: target number
+    :return: Integer, The index number
+    """
+    idx = -1
+    if target in nums:
+        idx = nums.index(target)
+    return idx
