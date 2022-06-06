@@ -105,3 +105,9 @@ def test_height_checker_v1(func_input, expected):
                           ([5, 1, 2, 3, 4], 5), ([1, 2, 3, 4, 5], 0)])
 def test_height_checker_v2(func_input, expected):
     assert height_checker_v2(heights=func_input) == expected
+
+
+@pytest.mark.parametrize("input_1, input_2, expected",
+                         [([-1, 0, 3, 5, 9, 12], 9, 4), ([-1, 0, 3, 5, 9, 12], 2, -1)])
+def test_binary_search(input_1, input_2, expected):
+    assert binary_search(nums=input_1, target=input_2) == expected
