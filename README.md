@@ -51,6 +51,8 @@ pytest -v tests/
     * sorting_the_sentence
     * is_palindrome
     * height_checker
+    * binary_search
+    * search_insert_position
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
