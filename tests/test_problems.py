@@ -1,5 +1,5 @@
 import pytest
-from context import src     # This used by pytest package
+from context import src     # This is used by pytest package
 from src.problems.problems import *
 
 
