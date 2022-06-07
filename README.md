@@ -53,6 +53,7 @@ pytest -v tests/
     * height_checker
     * binary_search
     * search_insert_position
+    * squares_of_a_sorted_array
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
