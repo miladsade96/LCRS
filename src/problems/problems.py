@@ -1,3 +1,4 @@
+from math import pow
 from typing import List
 from collections import Counter
 
@@ -326,3 +327,14 @@ def search_insert_position(nums: List[int], target: int) -> int:
         else:
             start = mid + 1
     return start
+
+
+def squares_of_a_sorted_array(nums: List[int]) -> List[int]:
+    """
+    Given an integer array nums sorted in non-decreasing order, return an array of
+    the squares of each number sorted in non-decreasing order.
+    Level of difficulty: Easy
+    :param nums: List of integers
+    :return: List of squared integers in increasing order
+    """
+    return sorted([int(pow(item, 2)) for item in nums])
