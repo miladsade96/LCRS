@@ -123,3 +123,8 @@ def test_search_insert_position(input_1, input_2, expected):
                          [([-4, -1, 0, 3, 10], [0, 1, 9, 16, 100]), ([-7, -3, 2, 3, 11], [4, 9, 9, 49, 121])])
 def test_squares_of_a_sorted_array(func_input, expected):
     assert squares_of_a_sorted_array(nums=func_input) == expected
+
+
+@pytest.mark.parametrize("func_input, expected", [([0, 1, 0, 3, 12], [1, 3, 12, 0, 0]), ([0], [0])])
+def test_move_zeros(func_input, expected):
+    assert move_zeros(nums=func_input) == expected
