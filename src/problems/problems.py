@@ -338,3 +338,21 @@ def squares_of_a_sorted_array(nums: List[int]) -> List[int]:
     :return: List of squared integers in increasing order
     """
     return sorted([int(pow(item, 2)) for item in nums])
+
+
+def move_zeros(nums: List[int]) -> List[int]:
+    """
+    Given an integer array nums, move all 0's to the end of it while maintaining
+    the relative order of the non-zero elements.
+    Level of difficulty: Easy
+    :param nums: List of integers
+    :return: List of integers
+    """
+    j = 0
+    for num in nums:
+        if num != 0:
+            nums[j] = num
+            j += 1
+    for i in range(j, len(nums)):
+        nums[i] = 0
+    return nums
