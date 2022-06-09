@@ -54,6 +54,7 @@ pytest -v tests/
     * binary_search
     * search_insert_position
     * squares_of_a_sorted_array
+    * move_zeros
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
