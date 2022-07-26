@@ -356,3 +356,14 @@ def move_zeros(nums: List[int]) -> List[int]:
     for i in range(j, len(nums)):
         nums[i] = 0
     return nums
+
+
+def valid_palindrome(s: str) -> bool:
+    """
+    Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+    Level of difficulty: Easy
+    :param s: String
+    :return: bool, Whether given string is palindrome or not
+    """
+    s_2 = "".join([ch for ch in s if ch.isalnum()]).lower()
+    return s == s_2[::-1]
