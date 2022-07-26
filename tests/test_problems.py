@@ -128,3 +128,11 @@ def test_squares_of_a_sorted_array(func_input, expected):
 @pytest.mark.parametrize("func_input, expected", [([0, 1, 0, 3, 12], [1, 3, 12, 0, 0]), ([0], [0])])
 def test_move_zeros(func_input, expected):
     assert move_zeros(nums=func_input) == expected
+
+
+@pytest.mark.parametrize("func_input, expected", [
+    ("a", True), ("ab", False), ("abc", False), ("aba", True), ("abcd ef", False), ("abba", True),
+    ("as;lj;alkspdkf2@", False), ("", True), ("@##@#@#@3ww3", True)
+])
+def test_valid_palindrome(func_input, expected):
+    assert valid_palindrome(s=func_input) == expected
