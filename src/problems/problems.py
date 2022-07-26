@@ -366,4 +366,4 @@ def valid_palindrome(s: str) -> bool:
     :return: bool, Whether given string is palindrome or not
     """
     s_2 = "".join([ch for ch in s if ch.isalnum()]).lower()
-    return s == s_2[::-1]
+    return s_2 == s_2[::-1]
