@@ -143,3 +143,10 @@ def test_valid_palindrome(func_input, expected):
 ])
 def test_best_time_to_buy_and_sell_stock(func_input, expected):
     assert best_time_to_buy_and_sell_stock(prices=func_input) == expected
+
+
+@pytest.mark.parametrize("func_input, expected", [
+    ('()', True), ('()[]{}', True), ('(]', False), ('([)]', False), ('{[]}', True)
+])
+def test_valid_parentheses(func_input, expected):
+    assert valid_parentheses(s=func_input) == expected
