@@ -136,3 +136,10 @@ def test_move_zeros(func_input, expected):
 ])
 def test_valid_palindrome(func_input, expected):
     assert valid_palindrome(s=func_input) == expected
+
+
+@pytest.mark.parametrize("func_input, expected", [
+    ([7, 1, 5, 3, 6, 4], 5), ([7, 6, 4, 3, 1], 0),
+])
+def test_best_time_to_buy_and_sell_stock(func_input, expected):
+    assert best_time_to_buy_and_sell_stock(prices=func_input) == expected
