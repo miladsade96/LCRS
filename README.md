@@ -57,6 +57,7 @@ pytest -v tests/
     * move_zeros
     * valid_palindrome
     * Best_time_to_buy_and_sell_stock
+    * Valid_parentheses
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
