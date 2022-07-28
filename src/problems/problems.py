@@ -367,3 +367,25 @@ def valid_palindrome(s: str) -> bool:
     """
     s_2 = "".join([ch for ch in s if ch.isalnum()]).lower()
     return s_2 == s_2[::-1]
+
+
+
+def best_time_to_buy_and_sell_stock(prices: List[int]) -> int:
+    """
+    You are given an array prices where prices[i] is the price of a given stock on the ith day.
+    You want to maximize your profit by choosing a single day to buy one stock and choosing a
+    different day in the future to sell that stock.
+    Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+    Note that you cannot sell a stock before you buy one.
+    Level of difficulty: Easy
+    :param prices: List of integers
+    :return: Integer, The maximum profit
+    """
+    max_profit = 0
+    min_price = prices[0]
+    for price in prices:
+        if price < min_price:
+            min_price = price
+        elif price - min_price > max_profit:
+            max_profit = price - min_price
+    return max_profit
