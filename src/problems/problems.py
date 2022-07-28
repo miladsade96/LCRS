@@ -389,3 +389,30 @@ def best_time_to_buy_and_sell_stock(prices: List[int]) -> int:
         elif price - min_price > max_profit:
             max_profit = price - min_price
     return max_profit
+
+
+
+def valid_parentheses(s: str) -> bool:
+    """
+    Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
+    determine if the input string is valid.
+    An input string is valid if:
+        Open brackets must be closed by the same type of brackets.
+        Open brackets must be closed in the correct order.
+    Level of difficulty: Easy
+    :param s: String containing just the characters '(', ')', '{', '}', '[' and ']'
+    :return: bool, Whether given string is valid or not
+    """
+
+    stack = []
+    close_to_open = {")": "(", "]": "[", "}": "{"}
+
+    for c in s:
+        if c in close_to_open:
+            if stack and stack[-1] == close_to_open[c]:
+                stack.pop()
+            else:
+                return False
+        else:
+            stack.append(c)
+    return True if not stack else False
