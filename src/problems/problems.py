@@ -447,3 +447,20 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+
+def invert_tree(root: Optional[TreeNode]) -> Optional[TreeNode]:
+    """
+    Invert a binary tree.
+    :param root: TreeNode
+    :return: TreeNode, The inverted tree
+    """
+    if not root:
+        return None
+    tmp = root.left
+    root.left = root.right
+    root.right = tmp
+
+    invert_tree(root.left)
+    invert_tree(root.right)
+    return root
