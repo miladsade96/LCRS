@@ -1,5 +1,5 @@
 from math import pow
-from typing import List
+from typing import List, Optional
 from collections import Counter
 
 
@@ -439,3 +439,11 @@ def reverse_linked_list(head: ListNode) -> ListNode:
         prev = curr
         curr = next_node
     return prev
+
+
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
