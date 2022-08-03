@@ -452,6 +452,7 @@ class TreeNode:
 def invert_tree(root: Optional[TreeNode]) -> Optional[TreeNode]:
     """
     Invert a binary tree.
+    Level of difficulty: Easy
     :param root: TreeNode
     :return: TreeNode, The inverted tree
     """

@@ -59,6 +59,7 @@ pytest -v tests/
     * Best_time_to_buy_and_sell_stock
     * Valid_parentheses
     * Reverse linked list
+    * Invert binary tree
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
