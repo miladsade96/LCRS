@@ -60,6 +60,7 @@ pytest -v tests/
     * Valid_parentheses
     * Reverse linked list
     * Invert binary tree
+    * Climbing stairs
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
