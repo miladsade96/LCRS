@@ -465,3 +465,19 @@ def invert_tree(root: Optional[TreeNode]) -> Optional[TreeNode]:
     invert_tree(root.left)
     invert_tree(root.right)
     return root
+
+
+def climbing_stairs(n: int) -> int:
+    """
+    You are climbing a staircase. It takes n steps to reach to the top.
+    Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+    Level of difficulty: Easy
+    :param n: Integer, The number of steps
+    :return: Integer, The number of distinct ways to climb to the top
+    """
+    last_m_o, last = 1, 1   # last_minus_one, last
+    for i in range(n - 1):
+        tmp = last_m_o
+        last_m_o = last + last_m_o
+        last = tmp
+    return last_m_o
