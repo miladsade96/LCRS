@@ -150,3 +150,10 @@ def test_best_time_to_buy_and_sell_stock(func_input, expected):
 ])
 def test_valid_parentheses(func_input, expected):
     assert valid_parentheses(s=func_input) == expected
+
+
+@pytest.mark.parametrize("func_input, expected", [
+    (1, 1), (2, 2), (3, 3), (4, 5), (5, 8),
+])
+def test_climb_stairs(func_input, expected):
+    assert climbing_stairs(n=func_input) == expected
