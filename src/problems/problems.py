@@ -481,3 +481,13 @@ def climbing_stairs(n: int) -> int:
         last_m_o = last + last_m_o
         last = tmp
     return last_m_o
+
+
+def reverse_bits(n: int) -> int:
+    """
+    Reverse bits of a given 32 bits unsigned integer.
+    Level of difficulty: Easy
+    :param n: Integer, 32 bits unsigned integer
+    :return: Integer, 32 bits unsigned integer
+    """
+    return int('{0:032b}'.format(n)[::-1], 2)
