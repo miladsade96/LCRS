@@ -61,6 +61,7 @@ pytest -v tests/
     * Reverse linked list
     * Invert binary tree
     * Climbing stairs
+    * Reverse bits
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
