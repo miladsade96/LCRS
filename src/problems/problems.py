@@ -491,3 +491,22 @@ def reverse_bits(n: int) -> int:
     :return: Integer, 32 bits unsigned integer
     """
     return int('{0:032b}'.format(n)[::-1], 2)
+
+
+def is_anagram(s: str, t: str) -> bool:
+    """
+    Given two strings s and t, write a function to determine if t is an anagram of s.
+    Level of difficulty: Easy
+    :param s: String
+    :param t: String
+    :return: bool, Whether given strings are anagrams or not
+    """
+    res = True
+    if len(s) != len(t):
+        res = False
+    else:
+        for c in set(s):
+            if s.count(c) != t.count(c):
+                res = False
+                break
+    return res
