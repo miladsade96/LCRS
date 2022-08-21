@@ -157,3 +157,11 @@ def test_valid_parentheses(func_input, expected):
 ])
 def test_climb_stairs(func_input, expected):
     assert climbing_stairs(n=func_input) == expected
+
+
+@pytest.mark.parametrize("func_input_1, func_input_2, expected", [
+    ("angel", "glean", True), ("arc", "car", True), ("brag", "grab", True),
+    ("abc", "ab", False), ("car", "cat", False), ("things", "night", False)]
+)
+def test_is_anagram(func_input_1, func_input_2, expected):
+    assert is_anagram(s=func_input_1, t=func_input_2) == expected
