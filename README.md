@@ -62,6 +62,7 @@ pytest -v tests/
     * Invert binary tree
     * Climbing stairs
     * Reverse bits
+    * Is Anagram
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
