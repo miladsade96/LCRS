@@ -510,3 +510,10 @@ def is_anagram(s: str, t: str) -> bool:
                 res = False
                 break
     return res
+
+
+class ListNode(object):
+    """Singly-Linked List"""
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
