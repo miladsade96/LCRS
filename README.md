@@ -63,6 +63,7 @@ pytest -v tests/
     * Climbing stairs
     * Reverse bits
     * Is Anagram
+    * Merge two linked lists
 * Medium:
     * binary_subarrays_with_sum
 * Hard:
