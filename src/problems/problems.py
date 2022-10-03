@@ -545,3 +545,22 @@ def merge_two_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Opt
     elif list2:
         tail.next = list2
     return dummy.next
+
+
+def group_anagrams(strs: List[str]) -> List[List[str]]:
+    """
+    Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+    An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically
+    using all the original letters exactly once.
+    Level of difficulty: Medium
+    :param strs: List of strings
+    :return: List of lists, Grouped anagrams
+    """
+    results = defaultdict(list)
+    for s in strs:
+        counts = [0] * 26
+        for char in s:
+            counts[ord(char) - ord("a")] += 1
+        results[tuple(counts)].append(s)
+    values = [value for value in results.values()]
+    return values
