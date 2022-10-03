@@ -1,6 +1,6 @@
 from math import pow
 from typing import List, Optional
-from collections import Counter
+from collections import Counter, defaultdict
 
 
 def is_isomorphic(s: str, t: str) -> bool:
