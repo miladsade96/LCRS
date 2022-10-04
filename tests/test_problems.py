@@ -165,3 +165,11 @@ def test_climb_stairs(func_input, expected):
 )
 def test_is_anagram(func_input_1, func_input_2, expected):
     assert is_anagram(s=func_input_1, t=func_input_2) == expected
+
+
+@pytest.mark.parametrize("func_input, expected", [
+    (["eat", "tea", "tan", "ate", "nat", "bat"], [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]),
+    ([""], [[""]]), (["a"], [["a"]])
+])
+def test_group_anagrams(func_input, expected):
+    assert group_anagrams(strs=func_input) == expected
