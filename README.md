@@ -65,7 +65,8 @@ pytest -v tests/
     * Is Anagram
     * Merge two linked lists
 * Medium:
-    * binary_subarrays_with_sum
+    * Binary_subarrays_with_sum
+    * Group_anagrams
 * Hard:
     * median_of_two_sorted_arrays
     * first_missing_positive
