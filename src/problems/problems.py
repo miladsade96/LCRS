@@ -564,3 +564,18 @@ def group_anagrams(strs: List[str]) -> List[List[str]]:
         results[tuple(counts)].append(s)
     values = [value for value in results.values()]
     return values
+
+
+def top_k_frequent_elements(nums: List, k: int) -> List[int]:
+    """
+    Given an integer array nums and an integer k, return the k most frequent elements.
+    You may return the answer in any order.
+    Level of difficulty: Medium
+    :param nums: List of given integers
+    :param k: Top k
+    :return: List of top k frequent elements
+    """
+    counts = Counter(nums)
+    sorted_counts = sorted(counts.items(), key=lambda k_v: k_v[1], reverse=True)
+    frequents = [sorted_counts[i][0] for i in range(k)]
+    return frequents
