@@ -173,3 +173,13 @@ def test_is_anagram(func_input_1, func_input_2, expected):
 ])
 def test_group_anagrams(func_input, expected):
     assert group_anagrams(strs=func_input) == expected
+
+
+@pytest.mark.parametrize("func_input_1, func_input_2, expected", [
+    ([1, 1, 1, 2, 2, 3], 1, [1]), ([1, 1, 1, 2, 2, 3], 2, [1, 2]),
+    ([1, 1, 3, 1, 2, 2, 3, 3, 3, 3], 1, [3]),
+    ([-4, 1, -1, -1, 4, 3, 2, 1, -4, 2, -1, -1, -4], 2, [-1, -4]),
+    ([-4, 1, -1, -1, 4, 3, 2, 1, -4, 2, -1, -1, -4], 1, [-1])
+])
+def test_top_k_frequent_elements(func_input_1, func_input_2, expected):
+    assert top_k_frequent_elements(nums=func_input_1, k=func_input_2) == expected
