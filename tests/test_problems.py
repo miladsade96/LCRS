@@ -183,3 +183,10 @@ def test_group_anagrams(func_input, expected):
 ])
 def test_top_k_frequent_elements(func_input_1, func_input_2, expected):
     assert top_k_frequent_elements(nums=func_input_1, k=func_input_2) == expected
+
+
+@pytest.mark.parametrize("func_input, expected",[
+    ([1, 2, 3, 4], [24, 12, 8, 6]), ([-1, 1, 0, -3, 3], [0, 0, 9, 0, 0])
+])
+def test_product_of_array_except_self(func_input, expected):
+    assert product_of_array_except_self(func_input) == expected
