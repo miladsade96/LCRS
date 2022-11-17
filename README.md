@@ -68,6 +68,7 @@ pytest -v tests/
     * Binary_subarrays_with_sum
     * Group_anagrams
     * Top k frequent elements
+    * Product of array except self
 * Hard:
     * median_of_two_sorted_arrays
     * first_missing_positive
