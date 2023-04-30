@@ -1,6 +1,5 @@
 ![logo](logo.png)
 
-
 [![CodeFactor](https://www.codefactor.io/repository/github/everlookneversee/lcrs/badge)](https://www.codefactor.io/repository/github/everlookneversee/lcrs)
 ![GitHub](https://img.shields.io/github/license/EverLookNeverSee/lcrs)
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/EverLookNeverSee/lcrs/main)
@@ -15,32 +14,39 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/EverLookNeverSee/lcrs)
 ![GitHub last commit](https://img.shields.io/github/last-commit/EverLookNeverSee/lcrs)
 
-
 ## Authors
+
 * Milad Sadeghi DM - [EverLookNeverSee@GitHub](https://github.com/EverLookNeverSee)
 * See all contributors list [here](https://github.com/EverLookNeverSee/LCRS/graphs/contributors).
 
-
 ## Installing the dependencies and running the tests
+
 1. Creating a python virtual environment:
+
 ```commandline
 python -m  venv virtual_environment_name
 ```
+
 2. Activating venv:
+
 ```commandline
 source virtual_environment_name/bin/activate
 ```
+
 3. Installing project dependencies:
+
 ```commandline
 python -m pip install -r requirements.txt
 ```
+
 4. Running tests:
+
 ```commandline
 pytest -v tests/
 ```
 
-
 ## Solved problems
+
 * Easy:
     * is_isomorphic
     * number_of_one_bits
