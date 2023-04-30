@@ -21,4 +21,17 @@ function topKFrequent(nums, k) {
 		.map(e => Number(e[0]));
 }
 
-module.exports = {topKFrequent: topKFrequent};
+/**
+ * 217. Contains Duplicate
+ * Given an integer array nums, return true if any value appears at least twice in the array,
+ * and return false if every element is distinct.
+ * https://leetcode.com/problems/contains-duplicate/
+ * @param {number[]} nums
+ * @returns {boolean}
+ */
+function containsDuplicate(nums) {
+	const uniqueItems = new Set(nums);
+	return uniqueItems.size < nums.length;
+}
+
+module.exports = {topKFrequent: topKFrequent, containsDuplicate: containsDuplicate};
