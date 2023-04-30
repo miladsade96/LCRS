@@ -119,6 +119,8 @@ npm run test
     Javascript
   </summary>
 
+* Easy:
+  * Contains duplicate
 * Medium:
   * Top k frequent elements
 
