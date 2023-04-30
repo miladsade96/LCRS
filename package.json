@@ -1,0 +1,25 @@
+{
+  "name": "lcrs",
+  "version": "0.0.1",
+  "description": "LeetCode Related Stuff",
+  "main": "problems.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EverLookNeverSee/LCRS.git"
+  },
+  "author": "Milad Sadeghi DM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EverLookNeverSee/LCRS/issues"
+  },
+  "homepage": "https://github.com/EverLookNeverSee/LCRS#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
