@@ -14,12 +14,20 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/EverLookNeverSee/lcrs)
 ![GitHub last commit](https://img.shields.io/github/last-commit/EverLookNeverSee/lcrs)
 
+---
+
 ## Authors
 
 * Milad Sadeghi DM - [EverLookNeverSee@GitHub](https://github.com/EverLookNeverSee)
 * See all contributors list [here](https://github.com/EverLookNeverSee/LCRS/graphs/contributors).
 
+---
+
 ## Installing the dependencies and running the tests
+<details>
+  <summary>
+    Python
+  </summary>
 
 1. Creating a python virtual environment:
 
@@ -44,40 +52,74 @@ python -m pip install -r requirements.txt
 ```commandline
 pytest -v tests/
 ```
+</details>
+
+<details>
+  <summary>Javascript</summary>
+
+1. Installing [nodeJS](https://nodejs.org/en/download) module
+2. Installing project dependencies:
+
+```commandline
+nmp install
+```
+
+3. Running tests:
+```commandline
+npm run test
+```
+</details>
+
+---
 
 ## Solved problems
 
-* Easy:
-    * is_isomorphic
-    * number_of_one_bits
-    * number_of_good_pairs
-    * two_Sum
-    * hamming_distance
-    * length_of_last_word
-    * sorting_the_sentence
-    * is_palindrome
-    * height_checker
-    * binary_search
-    * search_insert_position
-    * squares_of_a_sorted_array
-    * move_zeros
-    * valid_palindrome
-    * Best_time_to_buy_and_sell_stock
-    * Valid_parentheses
-    * Reverse linked list
-    * Invert binary tree
-    * Climbing stairs
-    * Reverse bits
-    * Is Anagram
-    * Merge two linked lists
-* Medium:
-    * Binary_subarrays_with_sum
-    * Group_anagrams
-    * Top k frequent elements
-    * Product of array except self
-* Hard:
-    * median_of_two_sorted_arrays
-    * first_missing_positive
-    * sliding_window_median
+<details>
+  <summary>
+    Python
+  </summary>
 
-**Work in progress...**
+* Easy:
+  * is_isomorphic
+  * number_of_one_bits
+  * number_of_good_pairs
+  * two_Sum
+  * hamming_distance
+  * length_of_last_word
+  * sorting_the_sentence
+  * is_palindrome
+  * height_checker
+  * binary_search
+  * search_insert_position
+  * squares_of_a_sorted_array
+  * move_zeros
+  * valid_palindrome
+  * Best_time_to_buy_and_sell_stock
+  * Valid_parentheses
+  * Reverse linked list
+  * Invert binary tree
+  * Climbing stairs
+  * Reverse bits
+  * Is Anagram
+  * Merge two linked lists
+* Medium:
+  * Binary_subarrays_with_sum
+  * Group_anagrams
+  * Top k frequent elements
+  * Product of array except self
+* Hard:
+  * median_of_two_sorted_arrays
+  * first_missing_positive
+  * sliding_window_median
+
+</details>
+
+<details>
+  <summary>
+    Javascript
+  </summary>
+
+* Medium:
+  * Top k frequent elements
+
+</details>
