@@ -4,8 +4,9 @@
  * 347. Top K Frequent Elements
  * Given an integer array nums and an integer k, return the k most frequent elements.
  * You may return the answer in any order.
- * @param nums
- * @param k
+ * https://leetcode.com/problems/top-k-frequent-elements/
+ * @param {number[]} nums
+ * @param {number} k
  * @returns {number[]}
  */
 function topKFrequent(nums, k) {
