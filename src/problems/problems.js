@@ -57,8 +57,24 @@ function isAnagramV1(s, t) {
 	return true;
 }
 
+/**
+ * 242. Valid Anagram
+ * Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+ * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+ * typically using all the original letters exactly once.
+ * Version NO.2
+ * @param {string} s
+ * @param {string} t
+ * @returns {boolean}
+ */
+function isAnagramV2(s, t) {
+	if (s.length !== t.length) return false;
+	return s.split("").sort().join("") === t.split("").sort().join("");
+}
+
 module.exports = {
 	topKFrequent: topKFrequent,
 	containsDuplicate: containsDuplicate,
 	isAnagramV1: isAnagramV1,
+	isAnagramV2: isAnagramV2,
 };
