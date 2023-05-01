@@ -9,3 +9,8 @@ test("Testing containsDuplicate function", () => {
 	expect(problems.containsDuplicate([1, 2, 3, 4])).toEqual(false);
 	expect(problems.containsDuplicate([1, 2, 3, 1, 4])).toEqual(true);
 });
+
+test("Testing isAnagram function", () => {
+	expect(problems.isAnagramV1("anagram", "nagaram")).toEqual(true);
+	expect(problems.isAnagramV1("rat", "car")).toEqual(false);
+});
