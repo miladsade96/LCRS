@@ -34,4 +34,31 @@ function containsDuplicate(nums) {
 	return uniqueItems.size < nums.length;
 }
 
-module.exports = {topKFrequent: topKFrequent, containsDuplicate: containsDuplicate};
+/**
+ * 242. Valid Anagram
+ * Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+ * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+ * typically using all the original letters exactly once.
+ * Version NO.1
+ * @param {string} s
+ * @param {string} t
+ * @returns {boolean}
+ */
+function isAnagramV1(s, t) {
+	if (s.length !== t.length) return false;
+	const sChars = {};
+	const tChars = {};
+	for (let i = 0; i < s.length; i++) sChars[s[i]] ? (sChars[s[i]] += 1) : (sChars[s[i]] = 1);
+	for (let j = 0; j < t.length; j++) tChars[t[j]] ? (tChars[t[j]] += 1) : (tChars[t[j]] = 1);
+	const tSet = new Set(t);
+	for (let char of tSet) {
+		if (sChars[char] !== tChars[char]) return false;
+	}
+	return true;
+}
+
+module.exports = {
+	topKFrequent: topKFrequent,
+	containsDuplicate: containsDuplicate,
+	isAnagramV1: isAnagramV1,
+};
