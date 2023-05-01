@@ -121,6 +121,7 @@ npm run test
 
 * Easy:
   * Contains duplicate
+  * Valid anagram
 * Medium:
   * Top k frequent elements
 
