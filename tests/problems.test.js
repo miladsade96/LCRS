@@ -13,4 +13,6 @@ test("Testing containsDuplicate function", () => {
 test("Testing isAnagram function", () => {
 	expect(problems.isAnagramV1("anagram", "nagaram")).toEqual(true);
 	expect(problems.isAnagramV1("rat", "car")).toEqual(false);
+	expect(problems.isAnagramV2("anagram", "nagaram")).toEqual(true);
+	expect(problems.isAnagramV2("rat", "car")).toEqual(false);
 });
