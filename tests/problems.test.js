@@ -16,3 +16,9 @@ test("Testing isAnagram function", () => {
 	expect(problems.isAnagramV2("anagram", "nagaram")).toEqual(true);
 	expect(problems.isAnagramV2("rat", "car")).toEqual(false);
 });
+
+test("Testing twoSum function", () => {
+	expect(problems.twoSum([2, 7, 11, 15], 9)).toEqual(expect.arrayContaining([0, 1]));
+	expect(problems.twoSum([3, 2, 4], 6)).toEqual(expect.arrayContaining([1, 2]));
+	expect(problems.twoSum([3, 3], 6)).toEqual(expect.arrayContaining([0, 1]));
+});
