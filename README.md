@@ -122,6 +122,7 @@ npm run test
 * Easy:
   * Contains duplicate
   * Valid anagram
+  * Two sum
 * Medium:
   * Top k frequent elements
 
