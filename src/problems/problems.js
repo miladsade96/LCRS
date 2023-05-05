@@ -72,9 +72,33 @@ function isAnagramV2(s, t) {
 	return s.split("").sort().join("") === t.split("").sort().join("");
 }
 
+/**
+ * 1. Two Sum
+ * Given an array of integers nums and an integer target, return indices of the two numbers such
+ * that they add up to target. You may assume that each input would have exactly one solution,
+ * and you may not use the same element twice. You can return the answer in any order.
+ * @param {number[]} nums
+ * @param {number} target
+ * @returns {number[]|(number|any)[]}
+ */
+function twoSum(nums, target) {
+	if (nums.length === 2) return [0, 1];
+	const mappings = new Map();
+	for (let i = 0; i < nums.length; i++) {
+		const num = nums[i];
+		const complement = target - num;
+		const complementIndex = mappings.get(complement);
+		const isTarget = mappings.has(complement);
+		if (isTarget) return [i, complementIndex];
+		mappings.set(num, i);
+	}
+	return [-1, -1];
+}
+
 module.exports = {
 	topKFrequent: topKFrequent,
 	containsDuplicate: containsDuplicate,
 	isAnagramV1: isAnagramV1,
 	isAnagramV2: isAnagramV2,
+	twoSum: twoSum,
 };
