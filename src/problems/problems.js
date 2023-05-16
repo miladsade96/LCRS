@@ -95,6 +95,66 @@ function twoSum(nums, target) {
 	return [-1, -1];
 }
 
+/**
+ * 49. Group Anagrams
+ * Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+ * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+ * typically using all the original letters exactly once.
+ * @param {string[]} listsOfStrings
+ * @returns {string[][]}
+ */
+function groupAnagramsV1(listsOfStrings) {
+	// 229 ms
+	const items = listsOfStrings.map((element, index) => {
+		return [element.split("").sort().join(""), index];
+	});
+	items.sort();
+	const hashMap = {};
+	for (let i = 0; i < items.length; i++) {
+		if (!hashMap[items[i][0]]) {
+			hashMap[items[i][0]] = [items[i][1]];
+		} else {
+			hashMap[items[i][0]].push(items[i][1]);
+		}
+	}
+
+	const results = [];
+	Object.values(hashMap).forEach(valuesArr => {
+		const group = [];
+		for (let value of valuesArr) {
+			group.push(listsOfStrings[value]);
+		}
+		results.push(group);
+	});
+	return results;
+}
+
+/**
+ * 49. Group Anagrams
+ * Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+ * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+ * typically using all the original letters exactly once.
+ * @param {string[]} listOfStrings
+ * @returns {string[][]}
+ */
+function groupAnagramsV2(listOfStrings) {
+	// 106 ms
+	const anagramsMap = {};
+
+	for (let i = 0; i < listOfStrings.length; i++) {
+		const str = listOfStrings[i];
+		const sortedStr = str.split("").sort().join("");
+
+		if (sortedStr in anagramsMap) {
+			anagramsMap[sortedStr].push(str);
+		} else {
+			anagramsMap[sortedStr] = [str];
+		}
+	}
+
+	return Object.values(anagramsMap);
+}
+
 module.exports = {
 	topKFrequent: topKFrequent,
 	containsDuplicate: containsDuplicate,
