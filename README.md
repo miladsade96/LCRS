@@ -2,7 +2,11 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/everlookneversee/lcrs/badge)](https://www.codefactor.io/repository/github/everlookneversee/lcrs)
 ![GitHub](https://img.shields.io/github/license/EverLookNeverSee/lcrs)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/EverLookNeverSee/lcrs/main)
+![CodeQl](https://github.com/EverLookNeverSee/lcrs/actions/workflows/codeql.yml/badge.svg)
+![Dependency Review](https://github.com/EverLookNeverSee/lcrs/actions/workflows/dependency-review.yml/badge.svg)
+![NodeJS](https://github.com/EverLookNeverSee/lcrs/actions/workflows/node.js.yml/badge.svg)
+![Python App](https://github.com/EverLookNeverSee/lcrs/actions/workflows/python-app.yml/badge.svg)
+![Python Package](https://github.com/EverLookNeverSee/lcrs/actions/workflows/python-package.yml/badge.svg)
 ![GitHub language count](https://img.shields.io/github/languages/count/EverLookNeverSee/lcrs)
 ![GitHub top language](https://img.shields.io/github/languages/top/EverLookNeverSee/lcrs)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EverLookNeverSee/lcrs)
@@ -128,3 +132,5 @@ npm run test
 | 49  |     Group anagrams      |      [Full Description on LeetCode](https://leetcode.com/problems/group-anagrams/) - [Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/8b3a876f3e6738d8747832d9ec014eb9f726e344/src/problems/problems.js#L98-L156)       |      Medium      |
 
 </details>
+
+### *Work in progress...*
