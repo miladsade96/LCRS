@@ -119,11 +119,12 @@ npm run test
     Javascript
   </summary>
 
-* Easy:
-  * Contains duplicate
-  * Valid anagram
-  * Two sum
-* Medium:
-  * Top k frequent elements
+| ID  |          Title          |                                                                                                                   Links                                                                                                                   | Difficulty Level |
+|:---:|:-----------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------:|
+| 217 |   Contains Duplicate    |     [Full Description on LeetCode](https://leetcode.com/problems/contains-duplicate/) - [Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/db405df654448525ca16dde8bd9e5461fe5d796e/src/problems/problems.js#L24-L35)     |       Easy       |  
+| 242 |      Valid Anagram      |       [Full Description on LeetCode](https://leetcode.com/problems/valid-anagram/) - [Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/db405df654448525ca16dde8bd9e5461fe5d796e/src/problems/problems.js#L37-L73)        |       Easy       |
+|  1  |         Two Sum         |          [Full Description on LeetCode](https://leetcode.com/problems/two-sum/) - [Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/8b3a876f3e6738d8747832d9ec014eb9f726e344/src/problems/problems.js#L84-L96)           |       Easy       |
+| 347 | Top k frequent elements |  [Full Description on LeetCode](https://leetcode.com/problems/top-k-frequent-elements/) - [Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/8b3a876f3e6738d8747832d9ec014eb9f726e344/src/problems/problems.js#L12-L22)   |      Medium      |
+| 49  |     Group anagrams      |      [Full Description on LeetCode](https://leetcode.com/problems/group-anagrams/) - [Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/8b3a876f3e6738d8747832d9ec014eb9f726e344/src/problems/problems.js#L98-L156)       |      Medium      |
 
 </details>
