@@ -22,3 +22,25 @@ test("Testing twoSum function", () => {
 	expect(problems.twoSum([3, 2, 4], 6)).toEqual(expect.arrayContaining([1, 2]));
 	expect(problems.twoSum([3, 3], 6)).toEqual(expect.arrayContaining([0, 1]));
 });
+
+test("Testing groupAnagrams functions", () => {
+	const outputArr = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]];
+	expect(problems.groupAnagramsV1(["eat", "tea", "tan", "ate", "nat", "bat"])).toEqual(
+		expect.arrayContaining([
+			outputArr[0],
+			expect.arrayContaining(outputArr[1]),
+			expect.arrayContaining(outputArr[2]),
+		]),
+	);
+	expect(problems.groupAnagramsV2(["eat", "tea", "tan", "ate", "nat", "bat"])).toEqual(
+		expect.arrayContaining([
+			outputArr[0],
+			expect.arrayContaining(outputArr[1]),
+			expect.arrayContaining(outputArr[2]),
+		]),
+	);
+	expect(problems.groupAnagramsV1([""])).toEqual([[""]]);
+	expect(problems.groupAnagramsV2([""])).toEqual([[""]]);
+	expect(problems.groupAnagramsV1(["a"])).toEqual([["a"]]);
+	expect(problems.groupAnagramsV2(["a"])).toEqual([["a"]]);
+});
