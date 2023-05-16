@@ -156,9 +156,11 @@ function groupAnagramsV2(listOfStrings) {
 }
 
 module.exports = {
-	topKFrequent: topKFrequent,
-	containsDuplicate: containsDuplicate,
-	isAnagramV1: isAnagramV1,
-	isAnagramV2: isAnagramV2,
-	twoSum: twoSum,
+	topKFrequent,
+	containsDuplicate,
+	isAnagramV1,
+	isAnagramV2,
+	twoSum,
+	groupAnagramsV1,
+	groupAnagramsV2,
 };
