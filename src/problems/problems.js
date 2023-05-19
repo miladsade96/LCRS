@@ -155,6 +155,30 @@ function groupAnagramsV2(listOfStrings) {
 	return Object.values(anagramsMap);
 }
 
+/**
+ * 238. Product of Array Except Self
+ * Given an integer array nums, return an array answer such that answer[i] is equal to the product
+ * of all the elements of nums except nums[i].
+ * The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+ * You must write an algorithm that runs in O(n) time and without using the division operation.
+ * @param {number[]} listOfNumbers
+ * @returns {number[]}
+ */
+function productOfArrayExceptSelf(listOfNumbers) {
+	const result = [];
+	let prefix = 1;
+	let postfix = 1;
+	for (let i = 0; i < listOfNumbers.length; i++) {
+		result[i] = prefix;
+		prefix *= listOfNumbers[i];
+	}
+	for (let j = listOfNumbers.length - 2; j >= 0; j--) {
+		postfix *= listOfNumbers[j + 1];
+		result[j] *= postfix;
+	}
+	return result;
+}
+
 module.exports = {
 	topKFrequent,
 	containsDuplicate,
@@ -163,4 +187,5 @@ module.exports = {
 	twoSum,
 	groupAnagramsV1,
 	groupAnagramsV2,
+	productOfArrayExceptSelf,
 };
