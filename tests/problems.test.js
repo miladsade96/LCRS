@@ -44,3 +44,7 @@ test("Testing groupAnagrams functions", () => {
 	expect(problems.groupAnagramsV1(["a"])).toEqual([["a"]]);
 	expect(problems.groupAnagramsV2(["a"])).toEqual([["a"]]);
 });
+
+test("Testing productOfArrayExceptSelf function", () => {
+	expect(problems.productOfArrayExceptSelf([1, 2, 3, 4])).toEqual([24, 12, 8, 6]);
+});
