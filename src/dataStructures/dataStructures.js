@@ -364,3 +364,47 @@ class Queue {
 		return this.length === 0;
 	}
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Queue Using Two Stacks:
+
+class QueueUsingTwoStacks {
+	constructor() {
+		this.enqueStack = [];
+		this.dequeueStack = [];
+	}
+
+	push(value) {
+		this.enqueStack.push(value);
+	}
+
+	pop() {
+		if (!this.dequeueStack.length) {
+			while (this.enqueStack.length) {
+				this.dequeueStack.push(this.enqueStack.pop());
+			}
+		}
+		return this.dequeueStack.pop();
+	}
+
+	peek() {
+		if (!this.dequeueStack.length) {
+			while (this.enqueStack.length) {
+				this.dequeueStack.push(this.enqueStack.pop());
+			}
+		}
+		return this.dequeueStack.at(-1);
+	}
+
+	isEmpty() {
+		return !this.enqueStack.length && !this.dequeueStack.length;
+	}
+
+	clear() {
+		this.enqueStack = [];
+		this.dequeueStack = [];
+		return this;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
