@@ -76,6 +76,24 @@ npm run test
 
 ---
 
+## Data structures
+<details>
+  <summary>
+    JavaScript
+  </summary>
+
+| No. |          Title           |                                                                               Links                                                                               |
+|:---:|:------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|  1  |        Hash Table        |  [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/b6df11417100c06ede38dd412b0a955a3f98e5fd/src/dataStructures/dataStructures.js#L1-L57)   |
+|  2  |    Singly Linked List    | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/b6df11417100c06ede38dd412b0a955a3f98e5fd/src/dataStructures/dataStructures.js#L59-L159)  |
+|  3  |    Doubly Linked List    | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/b6df11417100c06ede38dd412b0a955a3f98e5fd/src/dataStructures/dataStructures.js#L161-L255) |
+|  4  | Stack(using linked list) | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/b6df11417100c06ede38dd412b0a955a3f98e5fd/src/dataStructures/dataStructures.js#L257-L307) |
+|  5  |    Stack(using array)    | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/b6df11417100c06ede38dd412b0a955a3f98e5fd/src/dataStructures/dataStructures.js#L309-L329) |
+|  6  | Queue(using linked list) | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/b6df11417100c06ede38dd412b0a955a3f98e5fd/src/dataStructures/dataStructures.js#L331-L367) |
+|  7  | Queue(using two stacks)  | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/b6df11417100c06ede38dd412b0a955a3f98e5fd/src/dataStructures/dataStructures.js#L369-L409) |
+
+</details>
+
 ## Solved problems
 
 <details>
