@@ -1,6 +1,6 @@
 import pytest
 from context import src     # This is used by pytest package
-from src.problems.problems import *
+from src.problemsAndSolutions.problemsAndSolutions import *
 
 
 @pytest.mark.parametrize("input_1, input_2, expected",
