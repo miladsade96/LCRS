@@ -1,4 +1,4 @@
-const problems = require("../src/problems/problemsAndSolutions");
+const problems = require("../src/problemsAndSolutions/problemsAndSolutions");
 
 test("Testing topKFrequent function", () => {
 	expect(problems.topKFrequent([1, 1, 1, 1, 2, 2, 3], 2)).toEqual([1, 2]);
