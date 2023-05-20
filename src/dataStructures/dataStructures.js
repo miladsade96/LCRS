@@ -304,3 +304,25 @@ class Stack {
 		return this.length === 0;
 	}
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// Stack Using Array:
+class StackArray {
+	constructor() {
+		this.values = [];
+	}
+	peek() {
+		return this.values.at(-1);
+	}
+	push(value) {
+		this.values.push(value);
+		return this;
+	}
+	pop() {
+		return this.values.pop();
+	}
+
+	isEmpty() {
+		return this.values.length === 0;
+	}
+}
