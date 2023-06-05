@@ -179,6 +179,54 @@ function productOfArrayExceptSelf(listOfNumbers) {
 	return result;
 }
 
+/**
+ * 128. Longest Consecutive Sequence
+ * Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+ * You must write an algorithm that runs in O(n) time.
+ * @param {number[]} nums
+ * @returns {number}
+ */
+function longestConsecutiveSequenceV1(nums) {
+	// 207 ms
+	const cleaned = new Array(...new Set(nums)).sort((a, b) => a - b);
+	const sequences = [[cleaned[0]]];
+	let sequenceIndexer = 0;
+	let prediction = cleaned[0] + 1;
+
+	for (let index = 1; index < cleaned.length; index++) {
+		if (cleaned[index] === prediction) {
+			sequences[sequenceIndexer].push(cleaned[index]);
+			prediction += 1;
+		} else {
+			sequences.push([cleaned[index]]);
+			prediction = cleaned[index] + 1;
+			sequenceIndexer += 1;
+		}
+	}
+	return Math.max(...sequences.map(arr => arr.length));
+}
+
+/**
+ * 128. Longest Consecutive Sequence
+ * Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+ * You must write an algorithm that runs in O(n) time.
+ * @param {number[]} nums
+ * @returns {number}
+ */
+function longestConsecutiveSequenceV2(nums) {
+	// 79 ms
+	let set = new Set(nums);
+	let maxLen = 0;
+	for (let num of set) {
+		if (!set.has(num - 1)) {
+			let len = 0;
+			while (set.has(num++)) len++;
+			maxLen = Math.max(maxLen, len);
+		}
+	}
+	return maxLen;
+}
+
 module.exports = {
 	topKFrequent,
 	containsDuplicate,
@@ -188,4 +236,6 @@ module.exports = {
 	groupAnagramsV1,
 	groupAnagramsV2,
 	productOfArrayExceptSelf,
+	longestConsecutiveSequenceV1,
+	longestConsecutiveSequenceV2,
 };
