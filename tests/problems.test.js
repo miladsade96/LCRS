@@ -48,3 +48,10 @@ test("Testing groupAnagrams functions", () => {
 test("Testing productOfArrayExceptSelf function", () => {
 	expect(problems.productOfArrayExceptSelf([1, 2, 3, 4])).toEqual([24, 12, 8, 6]);
 });
+
+test("Testing longestConsecutiveSequence functions", () => {
+	expect(problems.longestConsecutiveSequenceV1([100, 4, 200, 1, 3, 2])).toEqual(4);
+	expect(problems.longestConsecutiveSequenceV1([0, 3, 7, 2, 5, 8, 4, 6, 0, 1])).toEqual(9);
+	expect(problems.longestConsecutiveSequenceV2([100, 4, 200, 1, 3, 2])).toEqual(4);
+	expect(problems.longestConsecutiveSequenceV2([0, 3, 7, 2, 5, 8, 4, 6, 0, 1])).toEqual(9);
+});
