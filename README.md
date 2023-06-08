@@ -22,7 +22,7 @@
 
 ## Authors
 
-* Milad Sadeghi DM - [EverLookNeverSee@GitHub](https://github.com/EverLookNeverSee)
+* Milad Sadeghi DM – [EverLookNeverSee@GitHub](https://github.com/EverLookNeverSee)
 * See all contributors list [here](https://github.com/EverLookNeverSee/LCRS/graphs/contributors).
 
 ---
@@ -65,12 +65,12 @@ pytest -v tests/
 2. Installing project dependencies:
 
 ```commandline
-nmp install
+pnpm install
 ```
 
 3. Running tests:
 ```commandline
-npm run test
+pnpm run test
 ```
 </details>
 
@@ -101,38 +101,38 @@ npm run test
     Python
   </summary>
 
-* Easy:
-  * is_isomorphic
-  * number_of_one_bits
-  * number_of_good_pairs
-  * two_Sum
-  * hamming_distance
-  * length_of_last_word
-  * sorting_the_sentence
-  * is_palindrome
-  * height_checker
-  * binary_search
-  * search_insert_position
-  * squares_of_a_sorted_array
-  * move_zeros
-  * valid_palindrome
-  * Best_time_to_buy_and_sell_stock
-  * Valid_parentheses
-  * Reverse linked list
-  * Invert binary tree
-  * Climbing stairs
-  * Reverse bits
-  * Is Anagram
-  * Merge two linked lists
-* Medium:
-  * Binary_subarrays_with_sum
-  * Group_anagrams
-  * Top k frequent elements
-  * Product of array except self
-* Hard:
-  * median_of_two_sorted_arrays
-  * first_missing_positive
-  * sliding_window_median
+| ID.  |              Title              |                                                                                                                                       Links                                                                                                                                        | Difficulty Level |
+|:----:|:-------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------:|
+| 205  |       Isomorphic Strings        |         [Full Description on LeetCode](https://leetcode.com/problems/isomorphic-strings/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L6-L26)         |       Easy       |
+| 338  |          Counting Bits          |           [Full Description on LeetCode](https://leetcode.com/problems/counting-bits/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L29-L38)           |       Easy       |
+| 1512 |      Number of Good Pairs       |       [Full Description on LeetCode](https://leetcode.com/problems/number-of-good-pairs/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L41-L54)        |       Easy       |
+|  1   |             Two Sum             |             [Full Description on LeetCode](https://leetcode.com/problems/two-sum/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L101-L117)             |       Easy       |
+| 461  |        Hamming Distance         |        [Full Description on LeetCode](https://leetcode.com/problems/hamming-distance/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L138-L149)         |       Easy       |
+|  58  |       Length of Last Word       |       [Full Description on LeetCode](https://leetcode.com/problems/length-of-last-word/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L152-L160)       |       Easy       |
+| 1859 |      Sorting the Sentence       |      [Full Description on LeetCode](https://leetcode.com/problems/sorting-the-sentence/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L194-L214)       |       Easy       |
+|  9   |        Palindrome Number        |        [Full Description on LeetCode](https://leetcode.com/problems/palindrome-number/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L217-L245)        |       Easy       |
+| 1051 |         Height Checker          |         [Full Description on LeetCode](https://leetcode.com/problems/height-checker/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L248-L289)          |       Easy       |
+| 704  |          Binary Search          |          [Full Description on LeetCode](https://leetcode.com/problems/binary-search/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L292-L305)          |       Easy       |
+|  35  |     Search Insert Position      |     [Full Description on LeetCode](https://leetcode.com/problems/search-insert-position/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L308-L329)      |       Easy       |
+| 977  |    Squares of a Sorted Array    |    [Full Description on LeetCode](https://leetcode.com/problems/squares-of-a-sorted-array/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L332-L340)    |       Easy       |
+| 283  |           Move Zeros            |           [Full Description on LeetCode](https://leetcode.com/problems/move-zeroes/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L343-L358)           |       Easy       |
+| 125  |        Valid Palindrome         |        [Full Description on LeetCode](https://leetcode.com/problems/valid-palindrome/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L361-L369)         |       Easy       |
+| 121  | Best Time to Buy and Sell Stock | [Full Description on LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L373-L391) |       Easy       |
+|  20  |        Valid Parentheses        |        [Full Description on LeetCode](https://leetcode.com/problems/valid-parentheses/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L395-L418)        |       Easy       |
+| 206  |       Reverse Linked List       |       [Full Description on LeetCode](https://leetcode.com/problems/reverse-linked-list/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L421-L441)       |       Easy       |
+| 226  |       Invert Binary Tree        |       [Full Description on LeetCode](https://leetcode.com/problems/invert-binary-tree/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L445-L467)        |       Easy       |
+|  70  |         Climbing Stairs         |         [Full Description on LeetCode](https://leetcode.com/problems/climbing-stairs/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L470-L483)         |       Easy       |
+| 190  |          Reverse Bits           |          [Full Description on LeetCode](https://leetcode.com/problems/reverse-bits/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L486-L493)           |       Easy       |
+| 242  |          Valid Anagram          |          [Full Description on LeetCode](https://leetcode.com/problems/valid-anagram/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L496-L512)          |       Easy       |
+|  21  |     Merge Two Linked Lists      |     [Full Description on LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L515-L547)      |       Easy       |
+| 930  |   Binary Sub-arrays with Sum    |     [Full Description on LeetCode](https://leetcode.com/problems/binary-subarrays-with-sum/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L76-L98)     |      Medium      |
+|  49  |         Group Anagrams          |         [Full Description on LeetCode](https://leetcode.com/problems/group-anagrams/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L550-L566)          |      Medium      |
+| 347  |     Top K Frequent Elements     |     [Full Description on LeetCode](https://leetcode.com/problems/top-k-frequent-elements/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L569-L581)     |      Medium      |
+| 238  |  Product of Array Except Self   |  [Full Description on LeetCode](https://leetcode.com/problems/product-of-array-except-self/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L584-L604)   |      Medium      |
+|  4   |   Median of Two Sorted Arrays   |    [Full Description on LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L57-L73)    |       Hard       |
+|  41  |     First Missing Positive      |     [Full Description on LeetCode](https://leetcode.com/problems/first-missing-positive/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L120-L135)      |       Hard       |
+| 480  |      Sliding Window Median      |      [Full Description on LeetCode](https://leetcode.com/problems/sliding-window-median/description/)–[Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/6bcd0c8ae75184c7887acc59cf5d4a9489c14069/src/problemsAndSolutions/problemsAndSolutions.py#L163-L191)      |       Hard       |
+
 
 </details>
 
@@ -152,4 +152,4 @@ npm run test
 | 128 | Longest Consecutive Sequence | [Full Description on LeetCode](https://leetcode.com/problems/longest-consecutive-sequence/) - [Solution on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/f13887bd0b331c233324aceb713d2151530ba97e/src/problemsAndSolutions/problemsAndSolutions.js#L182-L228) |      Medium      |
 </details>
 
-### *Work in progress...*
+### *Work in progress*
