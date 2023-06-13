@@ -268,4 +268,6 @@ module.exports = {
 	productOfArrayExceptSelf,
 	longestConsecutiveSequenceV1,
 	longestConsecutiveSequenceV2,
+	validPalindromeV1,
+	validPalindromeV2,
 };
