@@ -55,3 +55,12 @@ test("Testing longestConsecutiveSequence functions", () => {
 	expect(problems.longestConsecutiveSequenceV2([100, 4, 200, 1, 3, 2])).toEqual(4);
 	expect(problems.longestConsecutiveSequenceV2([0, 3, 7, 2, 5, 8, 4, 6, 0, 1])).toEqual(9);
 });
+
+test("Testing validPalindrome functions", () => {
+	expect(problems.validPalindromeV1("A man, a plan, a canal: Panama")).toEqual(true);
+	expect(problems.validPalindromeV1("race a car")).toEqual(false);
+	expect(problems.validPalindromeV1(" ")).toEqual(true);
+	expect(problems.validPalindromeV2("A man, a plan, a canal: Panama")).toEqual(true);
+	expect(problems.validPalindromeV2("race a car")).toEqual(false);
+	expect(problems.validPalindromeV2(" ")).toEqual(true);
+});
