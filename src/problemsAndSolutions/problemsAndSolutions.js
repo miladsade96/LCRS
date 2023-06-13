@@ -227,6 +227,36 @@ function longestConsecutiveSequenceV2(nums) {
 	return maxLen;
 }
 
+function validPalindromeV1(str) {
+	// 69 ms
+	if (str === "") return false;
+	if (str.length === 1) return true;
+
+	const cleaned = [...str.replaceAll(/[^A-Za-z0-9]/g, "").toLowerCase()];
+	const point = Math.trunc(cleaned.length / 2);
+	let left, right;
+
+	if (cleaned.length % 2 === 0) {
+		left = cleaned.slice(0, point);
+		right = cleaned.slice(point, cleaned.length).reverse();
+	} else {
+		left = cleaned.slice(0, point);
+		right = cleaned.slice(point + 1, cleaned.length).reverse();
+	}
+
+	for (let i = 0; i < left.length; i++) if (left[i] !== right[i]) return false;
+	return true;
+}
+
+function validPalindromeV2(str) {
+	// 68 ms - Space complexity is better in this one.
+	str = str.replace(/[^a-z0-9]/gi, "").toLowerCase();
+	for (let i = 0; i < str.length; i++) {
+		if (str[i] !== str[str.length - i - 1]) return false;
+	}
+	return true;
+}
+
 module.exports = {
 	topKFrequent,
 	containsDuplicate,
