@@ -227,6 +227,14 @@ function longestConsecutiveSequenceV2(nums) {
 	return maxLen;
 }
 
+/**
+ * 125. Valid Palindrome
+ * A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all
+ * non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters
+ * and numbers. Given a string s, return true if it is a palindrome, or false otherwise.
+ * @param {string} str
+ * @returns {boolean}
+ */
 function validPalindromeV1(str) {
 	// 69 ms
 	if (str === "") return false;
@@ -248,6 +256,14 @@ function validPalindromeV1(str) {
 	return true;
 }
 
+/**
+ * 125. Valid Palindrome
+ * A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all
+ * non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters
+ * and numbers. Given a string s, return true if it is a palindrome, or false otherwise.
+ * @param {string} str
+ * @returns {boolean}
+ */
 function validPalindromeV2(str) {
 	// 68 ms - Space complexity is better in this one.
 	str = str.replace(/[^a-z0-9]/gi, "").toLowerCase();
