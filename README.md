@@ -91,7 +91,8 @@ pnpm run test
 |  5  |    Stack(using array)    | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/b6df11417100c06ede38dd412b0a955a3f98e5fd/src/dataStructures/dataStructures.js#L309-L329) |
 |  6  | Queue(using linked list) | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/b6df11417100c06ede38dd412b0a955a3f98e5fd/src/dataStructures/dataStructures.js#L331-L367) |
 |  7  | Queue(using two stacks)  | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/b6df11417100c06ede38dd412b0a955a3f98e5fd/src/dataStructures/dataStructures.js#L369-L409) |
-
+|  8  |    Binary Search Tree    | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/95c08a50b1c7b4ffd648d2d0d8d04bb33ac86b37/src/dataStructures/dataStructures.js#L411-L464) |
+|  9  |          Graph           | [Implementation on GitHub](https://github.com/EverLookNeverSee/LCRS/blob/95c08a50b1c7b4ffd648d2d0d8d04bb33ac86b37/src/dataStructures/dataStructures.js#L467-L496) |
 </details>
 
 ## Solved problems
