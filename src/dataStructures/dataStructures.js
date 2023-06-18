@@ -408,3 +408,13 @@ class QueueUsingTwoStacks {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+// Binary Search Tree:
+
+class BSTNode {
+	// Binary Search Tree Node
+	constructor(value) {
+		this.right = null;
+		this.left = null;
+		this.value = value;
+	}
+}
